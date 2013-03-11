@@ -1,0 +1,7 @@
+button {
+  @extend .button;
+}
+
+.toolbar {
+  @extend .button-group;
+}

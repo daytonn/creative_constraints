@@ -1,0 +1,8 @@
+<%= "#{Rails.application.class.parent_name}" %>.Models.<%= name.camelize %> = Backbone.Model.extend({
+  urlRoot: '/<%= url %>'
+});
+
+<%= "#{Rails.application.class.parent_name}" %>.Collections.<%= name.pluralize.camelize %> = Backbone.Collection.extend({
+  url: '/<%= url %>',
+  model: <%= "#{Rails.application.class.parent_name}" %>.Models.<%= name.camelize %>
+});

@@ -1,0 +1,7 @@
+<%= "#{Rails.application.class.parent_name}" %>.Views.<%= name.camelize %> = Backbone.View.extend({
+
+  initialize: function() {
+    this.template = <%= "#{Rails.application.class.parent_name}" %>.Templates.<%= subdir.split('/').join('.') %>.<%= name.underscore %>;
+  }
+
+});
