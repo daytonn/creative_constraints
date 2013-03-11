@@ -19,5 +19,6 @@ group :development, :test do
   gem "rspec-rails", ">= 2.0.1"
   gem 'ejs'
   gem 'listen'
+  gem 'rformat'
 end
 
